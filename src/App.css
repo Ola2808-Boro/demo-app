@@ -22,6 +22,12 @@ button {
 
 }
 
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
