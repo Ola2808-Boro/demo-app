@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Form from './components/Form';
+import Header from './components/Header';
 
 function App() {
 
@@ -9,14 +10,8 @@ function App() {
   }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={helloReact}>
-          Click on me!
-        </button>
-        <a href='https://github.com/Ola2808-Boro/demo-app'>Repo link</a>
-        <Form />
-      </header>
+      <Header />
+      <Form />
 
     </div>
   );
