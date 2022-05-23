@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Form from './components/Form';
 
 function App() {
 
@@ -14,7 +15,9 @@ function App() {
           Click on me!
         </button>
         <a href='https://github.com/Ola2808-Boro/demo-app'>Repo link</a>
+        <Form />
       </header>
+
     </div>
   );
 }
