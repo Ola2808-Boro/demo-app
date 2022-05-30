@@ -1,5 +1,6 @@
 
 import './App.css';
+import './responsive.css'
 import Form from './components/Form';
 import Header from './components/Header';
 
