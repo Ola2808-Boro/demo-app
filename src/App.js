@@ -1,18 +1,29 @@
 
 import './App.css';
 import './responsive.css'
-import Form from './components/Form';
 import Header from './components/Header';
+import Navbar from './components/Navbar/Navbar'
+import { BrowserRouter as Router, Routes, Route, Switch } from "react-router-dom";
+import Home from './components/Pages/Home'
+import Contact from './components/Pages/Contact/Contact'
+import About from './components/Pages/About'
+import Blog from './components/Pages/Blog'
+
 
 function App() {
 
 
   return (
     <div className="Wrapper">
-      <div className="App">
-        <Header />
-        <Form />
-      </div>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/blog' element={<Blog />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
