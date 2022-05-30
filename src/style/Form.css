@@ -1,0 +1,63 @@
+.form {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.input {
+    width: 80%;
+    border: none;
+    border-radius: 20px;
+    padding: 0.6rem 1rem;
+    color: black;
+    margin: 0.5rem 2rem;
+
+}
+
+.form-button {
+    width: 50%;
+    padding: 0.6rem 1rem;
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 2rem;
+
+
+}
+
+.text-danger {
+    color: red;
+}
+
+label {
+    font-size: 2rem;
+}
+
+@media (min-width:889px) {
+
+
+
+    .input,
+    .form-button {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (min-width:1200px) {
+
+
+
+    .input,
+    .form-button {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+}

@@ -1,0 +1,62 @@
+.user {
+    margin-top: 4rem;
+
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 640px) {
+
+    .user {
+
+        align-items: start;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .user-text-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 889px) {
+
+    .user {
+
+        align-items: start;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    .user-text-description {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .user {
+
+        align-items: start;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    .user-text-description {
+        font-size: 2rem;
+    }
+}

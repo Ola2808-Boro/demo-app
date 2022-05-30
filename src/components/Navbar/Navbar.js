@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { MenuList } from './MenuList'
-import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faBars } from '@fortawesome/free-solid-svg-icons'

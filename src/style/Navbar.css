@@ -29,16 +29,6 @@ nav {
     transition: all 0.2s ease-in-out;
 }
 
-.logo {
-    font-weight: 600;
-    font-size: 25px;
-    color: tomato;
-}
-
-.logo font {
-    color: #fff;
-}
-
 .menu-list {
     list-style-type: none;
     display: flex;
@@ -72,12 +62,10 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
-    .logo {
-        font-size: 20px;
-    }
+
 
     .menu-list li a {
-        font-size: 14px;
+        font-size: 20px;
         margin-left: 10px;
     }
 }

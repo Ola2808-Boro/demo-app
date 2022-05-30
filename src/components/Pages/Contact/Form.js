@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 const defaultState = {
     name: '',
     nameError: '',
@@ -69,6 +70,8 @@ export default class Form extends Component {
 
     render() {
         return (
+
+
             <form className="form" onSubmit={(e) => this.submit(e)}>
                 <label>Name</label>
                 <input type="text" className="input" name="name" value={this.state.name} onChange={this.handleInputChange} />
@@ -76,6 +79,10 @@ export default class Form extends Component {
                 <button type="submit" className="form-button" disabled={this.state.nameError}>Submit
                 </button>
             </form>
+
+
+
+
         );
     }
 
