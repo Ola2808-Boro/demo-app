@@ -6,22 +6,26 @@ import Card from './Card'
 const Blog = () => {
 
     const herosNumbers = 10;
+    let numbers = [];
+    const [Data, setData] = useState([]);
+
     function getRandomInt(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min)) + min;
     }
 
-    let numbers = [];
+
     for (let i = 0; i < herosNumbers; i++) {
         numbers[i] = getRandomInt(1, 826);
     }
-    const url = `https://rickandmortyapi.com/api/character/${numbers}`
 
-    const [Data, setData] = useState([]);
+
+
     useEffect(() => {
-        const getData = async () => {
 
+        const getData = async () => {
+            const url = `https://rickandmortyapi.com/api/character/${numbers}`
 
             try {
                 const resp = await fetch(url);
@@ -35,30 +39,18 @@ const Blog = () => {
 
         getData();
 
-    }, []);
+    }, []);// eslint-disable-line react-hooks/exhaustive-deps
 
-
-    const cards = Data.map(item => {
-        <Card
-            key={item.id}
-            name={item.name}
-            status={item.status}
-            gender={item.gender}
-            img={item.image}
-
-
-        />
-    })
 
     return (
 
         <div className="Wrapper-blog">
             {
                 Data.map(data => {
-                    return ([
-                        <Card key={data.key} data={data} />,
+                    return (
+                        <Card key={data.key} data={data} />
 
-                    ]
+
                     )
                 })
             }
