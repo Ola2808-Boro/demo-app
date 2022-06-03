@@ -8,6 +8,7 @@ nav {
     justify-content: space-between;
     color: #fff;
     z-index: 99;
+    padding: 1rem;
 }
 
 .fas {

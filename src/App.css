@@ -1,12 +1,14 @@
+@import url('style/reset.css');
 @import url('style/Navbar.css');
 @import url('style/Form.css');
 @import url('style/About.css');
 @import url('style/Home.css');
+@import url('style/Card.css');
 /* @import url('style/responsive.css'); */
 
 .Wrapper {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: rgb(179, 206, 238);
   background: radial-gradient(circle, rgba(179, 206, 238, 1) 22%, rgba(15, 149, 218, 1) 72%);
 

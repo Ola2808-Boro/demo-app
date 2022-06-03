@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../images/logo192.png'
-
+import Card from './Pages/Card'
 
 function Header() {
 
@@ -18,6 +18,7 @@ function Header() {
             </div>
             <a className="repo-link" href='https://github.com/Ola2808-Boro/demo-app'>Repo link</a>
         </header>
+
     )
 
 }

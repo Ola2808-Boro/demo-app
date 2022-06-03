@@ -1,0 +1,193 @@
+.Wrapper-blog {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+    padding: 0.25rem;
+
+}
+
+
+.card {
+    border: 2px solid blue;
+    width: 90%;
+    background-color: rgb(245, 242, 238);
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    margin: 1rem 0rem;
+}
+
+.heros-img {
+    width: 100%;
+    height: 100%;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.heros-status {
+
+    top: 2%;
+    right: 53%;
+    background-color: blue;
+    font-size: 0.8rem;
+    padding: 0.15rem 0.2rem;
+    border-radius: 10px;
+    position: absolute;
+    font-weight: bold;
+
+
+}
+
+.hero-info {
+    width: 100%;
+    height: 25%;
+    padding: 0.25rem 0rem 0rem 0.3rem;
+
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+h5 {
+    font-size: 0.8rem;
+}
+
+
+@media (min-width: 640px) {
+
+    .Wrapper-blog {
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .card {
+        border: 2px solid blue;
+        width: 45%;
+        background-color: rgb(245, 242, 238);
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    h4 {
+        font-size: 1.3rem;
+
+    }
+
+    h6 {
+        font-size: 0.9rem;
+
+    }
+
+    h5 {
+        font-size: 01rem;
+    }
+}
+
+@media (min-width: 889px) {
+
+    h4 {
+        font-size: 1.5rem;
+
+    }
+
+    h6 {
+        font-size: 01rem;
+
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    h4 {
+        font-size: 2rem;
+
+    }
+
+    h6 {
+        font-size: 1.3rem;
+
+    }
+
+    h5 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .Wrapper-blog {
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .card {
+        border: 2px solid blue;
+        width: 23%;
+        height: 40%;
+        background-color: rgb(245, 242, 238);
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    h4 {
+        font-size: 1.6rem;
+
+    }
+
+    h6 {
+        font-size: 1.2rem;
+
+    }
+
+    h5 {
+        font-size: 1.3rem;
+    }
+
+    .heros-status {
+
+        top: 2%;
+        right: 3%;
+        font-size: 1.2rem;
+        padding: 0.25rem 0.4rem;
+
+
+
+    }
+
+}
